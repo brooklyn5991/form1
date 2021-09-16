@@ -1,0 +1,89 @@
+<html>
+  <head>
+    <title> survey form</title>
+    <link rel="stylesheet"  href="./css/style.css">
+
+  </head>
+
+  <body>
+      <h1 id='title'>
+          FreeCodeCamp Survey Form
+      </h1>
+      <p id="description"><i> Thank you for taking the time to help us improve the platform</i>
+  </body></p>
+
+  <form id="survey-form">
+    <div class="form-control">
+        <label for="name"  id='name-label'>Name</label>
+        <input type='text' id="name" name="name" placeholder="Enter your name" required/>
+    </div>
+    
+    
+    <div class="form-control">
+        <label for="email"  id='email-label'>Email</label>
+        <input type='email' id="email"  name="email" placeholder="Enter your email" required/>
+    </div>
+      
+
+    <div class="form-control">
+        <label for="number"  id='number-label'>Age(optional)</label>
+        <input type='number' id="number" placeholder="Enter your age" name="age" required min="0" max="150"/>
+    </div>    
+  
+    <div class="form-control">
+      <label for="role"  id='label-role'>Which option best describes your current role?</label>
+      <select name="role" id="dropdown"   id="role">
+        <option value="student">Student</option>
+        <option value="full-time">Full-time</option>
+        <option value="part-time">Part-time</option>
+        <option value="other">Other</option>
+      </select>
+    </div>
+  
+    <div class="form-control">
+      <label>Would you recommend freecodecamp to a friend?</label>
+      <Label for="recommend-1"><input type='radio' value="definitely" id='recommend-1' name="recommend"/>Definitely</Label>
+      <Label for="recommend-2"><input type='radio' value="maybe"  id='recommend-2' name="recommend"/>Maybe</Label>
+      <Label for="recommend-3"><input type='radio' value="not sure" id='recommend-3' name="recommend"/>Not sure</Label>
+  </div>    
+
+  <div class="form-control">
+    <label for="feature">What is your favorite feature of freeCodeCamp?</label>
+    <select name="feature" id="feature">
+      <option value="challenges">Challenges</option>
+      <option value="projects">Projects</option>
+      <option value="community">Community</option>
+      <option value="open-Source">Open-Source</option>
+    </select>
+  </div>
+  
+  <div class="form-control">
+    <label>What will you like to see improved? <small>(check all that apply)</small></label>
+
+    <label for='improve-1' ><input type="checkbox" name="improve" value='improve-1' id="improve-1"/>Front-end Projects</label>
+    <label for='improve-2'><input type="checkbox" name="improve"  value='improve-2' id="improve-2"/>Back-end Projects</label>
+    <label for='improve-3' ><input type="checkbox" name="improve" value='improve-3' id="improve-3"/>Data Visualization</label>
+    <label for='improve-4'><input type="checkbox" name="improve"  value='improve-4' id="improve-4"/>Challenges</label>
+    <label for='improve-5' ><input type="checkbox" name="improve" value='improve-5' id="improve-5"/>Open Source Community</label>
+    <label for='improve-6' ><input type="checkbox" name="improve" value='improve-6' id="improve-6"/>Gitter help rooms</label>
+    <label for='improve-7'><input type="checkbox" name="improve"  value='improve-7' id="improve-7"/>Videos</label>
+    <label for='improve-8'><input type="checkbox" name="improve"  value='improve-8' id="improve-8"/>City Meetups</label>
+    <label for='improve-9' ><input type="checkbox" name="improve" value='improve-9' id="improve-9"/>Wiki</label>
+    <label for='improve-10' ><input type="checkbox" name="improve" value='improve-10' id="improve-10"/>Forum</label> 
+    <label for='improve-11' ><input type="checkbox" name="improve" value='improve-11' id="improve-11"/>Additional Courses</label>
+
+  </div>
+
+  <div class="form-control">
+    <label for="comments"> Any comments or suggestions</label>
+    <textarea name="comments" id="comments" placeholder="Enter your comment here..."></textarea>
+
+  </div>
+
+    <button type="submit" id="submit">Submit</button>
+
+</form>
+
+
+
+</html>
